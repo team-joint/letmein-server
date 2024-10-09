@@ -30,7 +30,7 @@ public class AuthController {
         return authService.login(request);
     }
 
-    @PostMapping
+    @PostMapping("/reissue")
     public Jwt Reissue(@RequestBody ReissueRequest request) {
         return authService.reissue(request);
     }
